@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>墨迹天气</title>
+		<link rel="stylesheet" type="text/css" href="libs/plug/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="libs/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="libs/plug/font-awesome-4.6.3/css/font-awesome.min.css" />
+
+		<script src="libs/plug/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/plug/cityselect/js/jquery.cityselect.js" type="text/javascript" charset="utf-8"></script>
+		<!--layer-v2.4 弹窗插件加载-->
+		<script src="libs/plug/layer-v2.4/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<!--滑动插件-->
+		<script src="libs/plug/swipe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<i class="fa fa-bars"></i>
+			<i class="fa fa-map-marker"><span>天河区</span></i>
+			<i class="fa fa-share"></i>
+		</header>
+		<div class="m_container">
+			<!--<div id="city"> 
+				<select class="prov"></select>  
+				<select class="city" disabled="disabled"></select> 
+				<select class="dist" disabled="disabled"></select> 
+			</div>-->
+			<div class="search">
+				<input type="text" id="searchTxt" placeholder="输入城市名、天气关键词快捷查找" />
+				<i class="fa fa-search"></i>
+			</div>
+
+			<!--动态插入天气信息-->
+
+			<div class="tip"></div>
+			
+			<div class="w_forecast">
+				<div class="title">预报</div>
+				<div class="line"></div>
+				<div class="info_box">
+					<ul id="info" class="">
+						
+						<!--动态插入天气预报信息-->
+						
+					</ul>
+				</div>
+				<div class="line"></div>
+			</div>
+			
+			<div class="tip"></div>
+			
+			<div class="h48"></div>
+		</div>
+		<div class="backgroundPic"><img src="libs/img/bc.jpg" /></div>
+		<div class="cover"></div>
+		
+		<!--左侧栏-->
+		<div class="left_bar">
+			<table class="table">
+				<tr><th><span>编辑</span><i class="fa fa-plus"></i></th></tr>
+				<tr>
+					<td><img src="libs/img/1.png"/>广州<span>26°C</span></td>
+				</tr>
+				<tr>
+					<td><img src="libs/img/5.png"/>深圳<span>28°C</span></td>
+				</tr>
+				<tr>
+					<td><img src="libs/img/3.png"/>佛山<span>25°C</span></td>
+				</tr>
+				<tr>
+					<td><img src="libs/img/8.png"/>中山<span>23°C</span></td>
+				</tr>
+			</table>
+		</div>
+		
+		<footer>
+			<ul class="row">
+				<li class="col-xs-4 active"><div><p><i class="fa fa-cloud"></i></p><p>天气</p></div></li>
+				<li class="col-xs-4"><div><p><i class="fa fa-photo"></i></p><p>时景</p></div></li>
+				<li class="col-xs-4"><div><p><i class="fa fa-user"></i></p><p>我</p></div></li>
+			</ul>
+		</footer>
+	</body>
+
+</html>
